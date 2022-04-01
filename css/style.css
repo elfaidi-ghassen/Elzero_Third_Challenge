@@ -131,7 +131,7 @@ header .container > ul {
   padding-left: 0;
 }
 header .container > ul li {
-  padding: 20px 15px;
+  padding: 20px 5px;
   position: relative;
 }
 header .fa-bars {
