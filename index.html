@@ -3,81 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ghassen's World</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/my.framework.main.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
-    <!-- WIll be added at footer... -->
-    <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by freepik - www.freepik.com</a> -->
   </head>
-
   <body>
     <header>
       <div class="container">
-        <div class="logo">Elzero</div>
+        <div class="logo">Ghassen</div>
         <ul>
-          <li><a href="#"> Articles</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Featurs</a></li>
-          <li class="other-links"><a href="#">Other Links</a></li>
-          <i class="fa-solid fa-bars"></i>
-          <ul class="mega-list">
-            <img src="images/header-mega-list.jpg" alt="" />
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#featurs">Featurs</a></li>
+          <li class="other-links" onclick="startMenu()">Other Links</li>
+          <i class="fa-solid fa-bars" onclick="startMenu()"></i>
+          <!-- Mega Dropdown -->
+          <ul class="mega-list" id="menu">
+            <img src="images/header-mega-list.jpg" alt=""/>
             <div class="list-with-icon">
               <i class="fas fa-comments"></i>
-              <li><a href="#">Testimonial</a></li>
+              <li><a href="#testimonial">Testimonial</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-users-cog"></i>
-              <li><a href="#">Team Members</a></li>
+              <li><a href="#members">Team Members</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-building"></i>
-              <li><a href="#">Services</a></li>
+              <li><a href="#services">Services</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-check-circle"></i>
-              <li><a href="#">Our Skills</a></li>
+              <li><a href="#skills">Our Skills</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-clipboard"></i>
-              <li><a href="#">How It Works</a></li>
+              <li><a href="#HIW">How It Works</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-calendar-alt"></i>
-              <li><a href="#">Events</a></li>
+              <li><a href="#events">Events</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-money-check"></i>
-              <li><a href="#">Pricing Plan</a></li>
+              <li><a href="#pricing">Pricing Plan</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-photo-video"></i>
-              <li><a href="#">Top Videos</a></li>
+              <li><a href="#videos">Top Videos</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-database"></i>
-              <li><a href="#">Stats</a></li>
+              <li><a href="#stats">Stats</a></li>
             </div>
             <div class="list-with-icon">
               <i class="fas fa-percentage"></i>
-              <li><a href="#">Request A Discount</a></li>
+              <li><a href="#discount">Request A Discount</a></li>
             </div>
           </ul>
         </ul>
       </div>
     </header>
-
     <section class="landing">
       <div class="container">
         <div class="welcome-text">
-          <h1>Welcome, Pal!</h1>
+          <h1>Welcome to Ghassen's World</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus
-            quam distinctio praesentium odio deleniti, incidunt ratione
-            inventore voluptatibus quia?
+            I'm Ghassen Faidi, A front end developer aspirer. <br>
+            Currently, I create websites as practice projecrs for what I learn.
+            <br> This is also a practicing project.
           </p>
         </div>
         <img src="images/welcome-page.png" alt="" />
@@ -235,8 +232,7 @@
           <h3>Quality</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
-            minus illo porro. Atque numquam quibusdam harum praesentium eaque
-            sapiente explicabo?
+            minus illo porro. Atque numquam quibusdam harum praesentium.
           </p>
           <div class="feature-button">More</div>
         </div>
@@ -247,8 +243,7 @@
           <h3>Time</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
-            minus illo porro. Atque numquam quibusdam harum praesentium eaque
-            sapiente
+            minus illo porro. Atque numquam quibusdam harum
           </p>
           <div class="feature-button">More</div>
         </div>
@@ -791,33 +786,33 @@
             </p>
           </div>
         </div>
-          <div class="footer-links">
-            <ul>
-              <li><a href="#">Important Link 1</a></li>
-              <li><a href="#">Important Link 2</a></li>
-              <li><a href="#">Important Link 3</a></li>
-              <li><a href="#">Important Link 4</a></li>
-              <li><a href="#">Important Link 5</a></li>
-            </ul>
-          </div>
-          <div class="footer-other">
-            <ul>
-              <li>Tunisia, Gabés, Elhamma</li>
-              <li>I work 24/24 7/7</li>
-              <li>+216 56072228</li>
-            </ul>
-          </div>
-            <div class="footer-grid">
-               <img src="images/pfp-6.webp" alt="" />
-              <img src="images/pfp-5.webp" alt="" />
-              <img src="images/pfp-4.jpg" alt="" />
-              <img src="images/pfp-3.jpg" alt="" />
-              <img src="images/pfp-2.png" alt="" />
-              <img src="images/pfp-1.jpg" alt=""/>
-            </div>
-          
-        
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Important Link 1</a></li>
+            <li><a href="#">Important Link 2</a></li>
+            <li><a href="#">Important Link 3</a></li>
+            <li><a href="#">Important Link 4</a></li>
+            <li><a href="#">Important Link 5</a></li>
+          </ul>
+        </div>
+        <div class="footer-other">
+          <ul>
+            <li>Tunisia, Gabés, Elhamma</li>
+            <li>I work 24/24 7/7</li>
+            <li>+216 56072228</li>
+          </ul>
+        </div>
+        <div class="footer-grid">
+          <img src="images/pfp-6.webp" alt="" />
+          <img src="images/pfp-5.webp" alt="" />
+          <img src="images/pfp-4.jpg" alt="" />
+          <img src="images/pfp-3.jpg" alt="" />
+          <img src="images/pfp-2.png" alt="" />
+          <img src="images/pfp-1.jpg" alt="" />
+        </div>
       </div>
     </section>
+
+  <script src="main.js"></script>
   </body>
 </html>
