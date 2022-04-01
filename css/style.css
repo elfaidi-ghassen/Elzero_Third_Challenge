@@ -136,7 +136,7 @@ header .container > ul li {
   position: relative;
 }
 @media (max-width: 768px) {
-  header .container > ul li {
+  .hide {
     display: none;
   }
 }
